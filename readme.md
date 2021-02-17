@@ -1,14 +1,9 @@
-#### Accessing Dom Elements
+# Accessing Dom Elements
 
-#### Nodes
+### Nodes
 
-![DOM Elemntt Traversal](https://javascript.info/article/dom-navigation/dom-links.png)
+![DOM Element Traversal](https://i.ibb.co/wgBwmdv/dom.png)
 
----
-
-#### Elements
-
-![DOM Elements Traversal](https://javascript.info/article/dom-navigation/dom-links-elements.png)
 
 ```javascript
 // Returns a reference to the element by its ID.
