@@ -2,7 +2,7 @@
 
 ### Nodes
 
-![DOM Element Traversal](https://i.ibb.co/wgBwmdv/dom.png)
+![DOM Element Traversal](https://i.ibb.co/H4Bx8KJ/dom.png)
 
 
 ```javascript
