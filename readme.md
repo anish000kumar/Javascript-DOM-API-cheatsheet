@@ -1,4 +1,4 @@
-# Accessing Dom Elements
+# Accessing DOM Elements
 
 ### DOM node overview
 
