@@ -1,6 +1,6 @@
 # Accessing Dom Elements
 
-### Nodes
+### DOM node overview
 
 ![DOM Element Traversal](https://i.ibb.co/H4Bx8KJ/dom.png)
 
@@ -34,7 +34,7 @@ var children = stored.childNodes;
 var parental = children.parentNode;
 ```
 
-#### Create New DOM Elements
+# Create New DOM Elements
 
 ```javascript
 // create new elments
@@ -52,7 +52,7 @@ newParagraph.appendChild(pText);
 // elements are now created and ready to be added to the DOM.
 ```
 
-#### Add Elements to the DOM
+# Add Elements to the DOM
 
 ```javascript
 // grab element on page you want to add stuff to
@@ -71,7 +71,7 @@ var parent = firstHeading.parentNode;
 parent.insertBefore(newHeading, firstHeading);
 ```
 
-#### Add Elements to the DOM cont.
+# Add Elements to the DOM cont.
 
 Suppose you have the following HTML:
 
@@ -92,7 +92,7 @@ box2.insertAdjacentHTML("beforebegin", "<div><p>This gets inserted.</p></div>");
 // afterend - The HTML would be placed immediately after the element, as a sibling.
 ```
 
-#### Add/Remove/Toggle/Check Classes
+# Add/Remove/Toggle/Check Classes
 
 ```javascript
 // grab element on page you want to use
@@ -115,7 +115,7 @@ firstHeading.classList.toggle("visible");
 firstHeading.classList.contains("foo");
 ```
 
-### Using template literals
+# Using template literals
 
 ```html
 <body></body>
@@ -133,7 +133,7 @@ function render(props) {
 document.body.innerHTML = render("John");
 ```
 
-### Other node methods
+# Other node methods
 
 ```javascript
 // Creates newNode as a copy (clone) of node. If bool is true, the clone includes clones of all the child nodes of the original.
@@ -162,15 +162,15 @@ node.nodeName
 node.nodeValue
 ```
 
-### Events
+# Events
 
-- INLINE EVENT HANDLERS
+## Inline event handling
 
 ```html
 <a href="site.com" onclick="dosomething();">A link</a>
 ```
 
-- DOM ON-EVENT HANDLERS
+## DOM on-event handling
 
 ```javascript
 window.onload = () => {
@@ -183,21 +183,21 @@ xhr.onreadystatechange = () => {
 };
 ```
 
-- USING ADDEVENTLISTENER()
+## Using addEventListener()
 
 ```javascript
 window.addEventListener("load", onLoad);
 window.removeEventListener("load", onLoad);
 ```
 
-#### Custom events
+## Custom events
 
 ```javascript
 //A CustomEventInit dictionary, having the following fields: "detail", optional and defaulting to null, of type any, that is an event-dependent value associated with the event.
 event = new CustomEvent(typeArg, customEventInit);
 ```
 
-- Dispatching
+### Dispatching
 
 ```javascript
 var event = new Event("build");
@@ -213,7 +213,7 @@ elem.addEventListener(
 elem.dispatchEvent(event);
 ```
 
-#### Date and time
+# Date and time
 
 ```javascript
 //Sun Nov 18 2018 23:18:58 GMT+0530 (India Standard Time)
