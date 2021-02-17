@@ -71,7 +71,7 @@ var parent = firstHeading.parentNode;
 parent.insertBefore(newHeading, firstHeading);
 ```
 
-# Add Elements to the DOM cont.
+---
 
 Suppose you have the following HTML:
 
